@@ -1,0 +1,27 @@
+<html>
+<body>
+<input id="movies">No.of Seats
+<br><br>
+<input readonly id="total">
+<script>
+var n=Number(document.getElementById("movies").value);
+const ticket_cost=150;
+var total_cost;
+if(n>2 && n<=6){
+total_cost=n*ticket_cost-(n*ticket_cost*0.05);
+document.getElementById("total").value=total_cost.toFixed(2);
+document.write("Amount to be paid");
+}
+else if(n>=1 && n<=2) {
+total_cost=n*ticket_cost;
+document.getElementById("total").value=total_cost.toFixed(2);
+document.write("Amount to be paid");
+}
+else{
+alert("Booking not allowed");
+}
+</script>
+
+
+</body>
+</html>
