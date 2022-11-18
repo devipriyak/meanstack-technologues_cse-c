@@ -37,7 +37,7 @@ app.post("/sign_up",(req,res)=>{
         "name": name,
         "email" : email,
         "phno": phno,
-        "password" : password
+        "pswd" : password
     });
 data.save();
 
